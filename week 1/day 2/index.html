@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400"/>
+  </head>
+  <body>
+    <section>
+      <img src="pic/bg.jpg" id="bg" />
+      <img src="pic/moon.png" id="moon" />
+      <img src="pic/mountain.png" id="mountain" />
+      <img src="pic/road.png" id="road" />
+      <h2 id="text">Muhammad Ripqi</h2>
+      <div class="console-underscore" id="console"><h2>&#95;</h2></div>
+    </section>
+
+    <!-- Script for parallax effect -->
+    <script type="text/javascript" src="js/parallax.js"></script>
+
+    <!-- Card code -->
+    <div class="wrapper">
+      <div class="container" id="c0">
+        <div class="image" id="i0">
+          <div class="city"></div>
+          <img src="pic/me4.jpg" class="pic2" />
+        </div>
+        <div class="story" id="s0">
+          <div class="info">
+            <h3>Who am I</h3>
+            <p>
+              My name is Muhammad Ripqi <br>
+              25th September is my birthday<br>
+              Born in Ciamis, now live in Medan<br>
+              My career right now is a Developer <br>
+              Travelling, Games, and Novel are my hobby<br>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="c1">
+        <div class="image" id="i1">
+          <div class="city"></div>
+          <img src="pic/fasilkom-ti.jpg" class="pic1" />
+        </div>
+        <div class="story" id="s1">
+          <div class="info">
+            <h3>College Life</h3>
+            <p>
+              Graduated from Computer Science USU. An active member of organization, with a lot
+              of experience as a head department while organizing event. Manage to get some certificate which is Microsoft software development
+              fundamental, MOS and ICT project manager from LSP informatika.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="c2">
+        <div class="image" id="i2">
+          <div class="city">
+            <img src="pic/me2.JPG" class="pic3" />
+          </div>
+        </div>
+        <div class="story" id="s2">
+          <div class="info">
+            <h3>Experience</h3>
+            <p>
+              Created an encyption program
+              for my final project. Created an excel employee search and credit report with VBA 
+              while doing Field Work. Deploying a moodle with AWS for Digitalent Scholarship.
+              And created a basic CRUD website with laravel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <p id="startp">
+        <div id="containerword">
+          My Skill!
+          <div id="flip">
+            <div><div>Desktop</div></div>
+            <div><div>Web</div></div>
+            <div><div>And More!</div></div>
+          </div>
+        </div>
+      </p>
+      <!-- Flip words -->
+      
+      <img src="pic/skill1.png" class="align-left slide-in" />
+
+      <img src="pic/skill2.jpeg" class="align-right slide-in" />
+
+      <img src="pic/skill3.png" class="align-left slide-in" />
+
+      <img src="pic/skill4.jpeg" class="align-right slide-in" />
+
+      <img src="pic/skill5.png" class="align-left slide-in" />
+
+      <img src="pic/skill6.png" class="align-right slide-in" />
+
+      <img src="pic/skill8.png" class="align-left slide-in" />
+    </div>
+
+
+
+    <!-- Script for slide IMG -->
+    <script type="text/javascript" src="js/slider.js"></script>
+    
+
+    <!-- script for typing text -->
+    <!-- text in the console text is the id position of the text -->
+    <script type="text/javascript" src="js/typing.js"></script>
+    <div class="white-box">
+    
+    </div>
+    <script type="text/javascript" src="js/button.js"></script>
+    <div class="contact">Contact Me</div>
+    
+    <div class="containerform">
+      <form action="mailto:ripqisani21@gmail.com" method="post" enctype="text/plain"">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">E-mail</label>
+        </div>
+        <div class="col-75">
+          <input type="email" id="email" name="email" placeholder="E-mail">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="australia">Indonesia</option>
+            <option value="canada">Malaysia</option>
+            <option value="usa">Singapore</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Message</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" name="submit" value="Submit">
+      </div>
+      </form>
+    </div>
+              
+</html>
