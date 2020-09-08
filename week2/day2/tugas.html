@@ -6,6 +6,8 @@
     <title>Document</title>
   </head>
   <body>
+    <script src="change.js"></script>
+    <script src="script.js"></script>
     <p id="a">
       The setInterval() method calls a function or evaluates an expression at
       specified intervals (in milliseconds). The setInterval() method will
@@ -32,42 +34,6 @@
     <br />
     <button onclick="myFunction()">Change_COLOR</button>
 
-    <!-- color script -->
-    <script>
-      function myFunction() {
-        myVar = setInterval(changeColor, 1000);
-      }
-
-      function changeColor() {
-        var x = document.getElementById("a");
-        if (x.style.color == "yellow") {
-          x.style.color = "red";
-        } else if (x.style.color == "red") {
-          x.style.color = "green";
-        } else {
-          x.style.color = "yellow";
-        }
-
-        var y = document.getElementById("b");
-        if (y.style.color == "green") {
-          y.style.color = "yellow";
-        } else if (y.style.color == "yellow") {
-          y.style.color = "red";
-        } else {
-          y.style.color = "green";
-        }
-
-        var z = document.getElementById("c");
-        if (z.style.color == "red") {
-          z.style.color = "green";
-        } else if (z.style.color == "green") {
-          z.style.color = "yellow";
-        } else {
-          z.style.color = "red";
-        }
-      }
-    </script>
-
     <div>
       <h5>Choose Background Color:</h5>
       <input type="color" id="color" />
@@ -76,15 +42,15 @@
     </div>
 
     <script>
-      let colorInput = document.querySelector("#color");
-      let colorInputText = document.querySelector("#color1");
+      var colorInput = document.querySelector("#color");
+      var colorInputText = document.querySelector("#color1");
       colorInput.addEventListener("input", () => {
-        let color = colorInput.value;
+        var color = colorInput.value;
         document.body.style.backgroundColor = color;
       });
 
       colorInputText.addEventListener("input", () => {
-        let color = colorInputText.value;
+        var color = colorInputText.value;
         document.querySelector("h1").style.color = color;
       });
     </script>
