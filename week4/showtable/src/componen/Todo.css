@@ -1,0 +1,23 @@
+.buttontodo {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+.isi {
+  display: flex;
+  flex: 1;
+  height: 20;
+  alignitems: "stretch";
+  background-color: lightblue;
+  padding: 20;
+  font-weight: bold;
+}
+
+.content {
+  background-color: lightseagreen;
+}
